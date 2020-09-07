@@ -1,0 +1,30 @@
+.menu {
+    
+       height:100px;
+}
+
+.colmain {
+    margin-top: 15px;
+    background-color: rgb(128, 56, 163);
+    height: 300px;
+}
+
+.colaside {
+    
+    background-color: rgb(97, 92, 22);
+    height: 150px;
+    
+}
+
+
+.colfooter {
+    margin-top: 10px;
+    background-color: deeppink;
+    height: 100px;
+    border: 1px solid whitesmoke;
+}
+.widge {
+    margin-top: 10px;
+    background-color: tomato;
+    height: 80px;
+}
