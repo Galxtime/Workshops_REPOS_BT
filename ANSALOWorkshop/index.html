@@ -1,43 +1,56 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculadora</title>
-    <link rel="stylesheet" href="Assets/css/style.css">
-</head>
-<body>
-  
-  <div class="container">
-    <h1 class="title">RETO ANSALO</h1>
-    <label for="">Letras</label> 
-    <div class="letter" id="letter"></div>
-    <label for="">Números</label> 
-    <div class="number" id="number"></div>
-    
-    <div id="keyboard">
-      <button class="operator" id='bttnA1'>A-1</button>
-      <button class="operator" id='bttnB2'>B-2</button>
-      <button class="operator" id='bttnC3'>C-3</button>
-      <button class="operator" id='bttnD4'>D-4</button>
-      <button class="operator" id='bttnE5'>E-5</button>
-      <button class="operator" id='bttnF6'>F-6</button>
-      <button class="operator" id='bttnG7'>G-7</button>
-      <button class="operator" id='bttnH8'>H-8</button>
-      <button class="operator" id='bttnI9'>I-9</button>
-      <button class="operator" id='bttnCalc'>Calc</button>
-      <button class="operator" id='bttnJ0'>J-0</button>
-      <button class="operator" id='bttnClear'>Reset</button>
-      
-                
-    </div>
-  </div>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:600,700" rel="stylesheet">
+		<title>A simple calculator</title>
+	</head>
+	<body>
+		<div id="container">
+			<div id="calculator">
+				<div id="result">
+					
+					<div id="containerIntro">
+						<h1 class="start">Letra </h1>
+						<p class="start" id="letter"></p>
+					</div>	
+									
+					
+                   <div id="containerIntro">
+                    <h1 class="start">Número</h1>
+                     <p class="start" id="number"></p>
+                   </div>
+				 
+				   <label class="switch">
+					<input type="checkbox">
+					<span class="slider"></span>
+				  </div><br><br>
 
-
-   
-                                                                                                     
-    <script src="JS/calculator.js"></script>
-
-    
-</body>
+				  <label class="switch">
+					<input type="checkbox">
+					<span class="slider"></span>
+				  </label>
+                  
+					
+								
+				
+				<div id="keyboard">
+					<button class="operator" id='bttnA1'>A-1</button>
+					<button class="operator" id='bttnB2'>B-2</button>
+					<button class="operator" id='bttnC3'>C-3</button>
+				  <button class="operator" id='bttnD4'>D-4</button>
+					<button class="operator" id='bttnE5'>E-5</button>
+					<button class="operator" id='bttnF6'>F-6</button>
+					<button class="operator" id='bttnG7'>G-7</button>
+					<button class="operator" id='bttnH8'>H-8</button>
+					<button class="operator" id='bttnI9'>I-9</button>
+					<button class="operator" id='bttnCalc'>Calc</button>
+					<button class="operator" id='bttnJ0'>J-0</button>
+					<button class="operator" id='bttnClear'>Reset</button>
+					
+										
+				</div>
+			</div>
+		</div>
+		<script src="./assets/js/calculator></script>
+	</body>
 </html>

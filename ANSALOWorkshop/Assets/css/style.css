@@ -1,68 +1,121 @@
-
 body{
 	font-family: 'Open Sans',sans-serif;
-	background-color: white;
+	background-color: black;
 }
+
 #container{
 	width: 1000px;
-	height: 750px;
+	height: 550px;
 	background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url();
 	margin: 20px auto;	
 }
+
 #calculator{
-	width: 350px;
-	height: 620px;
+	width: 370px;
+	height: 580px;
 	background-color: #eaedef;
 	margin: 0 auto;
 	top: 20px;
-	
+	position: relative;
 	border-radius: 5px;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-#displayAns {
-	display: block;
-	height: 150px;
-	text-align: center;
-}
+h1.start {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+	line-height: 28px;
+	width: 60px;
+	margin: 10px 12px;
+	display: inline-block;
+	
+	}
+
+p.start{
+	display: inline-block;
+	border:2px,white,solid;
+	background-color: wheat;
+	width: 270px;
+	height:35px ;
+	border-radius: 6px;
+	margin-bottom: 10px;
+	}
+	
+
 #result{
 	height: 180px;
 }
 #history{
-	text-align: left;
+	text-align: right;
 	height: 20px;
 	margin: 0 20px;
 	padding-top: 20px;
 	font-size: 15px;
-	color: black;
+	color: #919191;
 }
 #output{
 	text-align: right;
 	height: 60px;
 	margin: 10px 20px;
 	font-size: 30px;
-	padding-top: 10px;
 }
-#leftText {
-	display: inline;
-	
-}
-#letter {
-	border:2px,white,solid;
-	background-color: wheat;
-	width: 270px;
-	height:35px ;
-	border-radius: 6px;
-	margin-bottom: 10px;
-}
-#number {
-	border:2px,white,solid;
-	background-color: wheat;
-	width: 270px;
-	height:35px ;
-	border-radius: 6px;
-	margin-bottom: 10px;
-}
+/* position*/
+.switch {
+
+	position: relative;
+	display: inline-flex;
+	align-items: flex-end;
+	margin: 0 6px;
+	width: 60px;
+	height: 34px;
+  }
+  
+  .switch input { 
+	opacity: 0;
+	width: 0;
+	height: 0;
+  }
+  
+  .slider {
+	position: absolute;
+	cursor: pointer;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: #ccc;
+	-webkit-transition: .4s;
+	transition: .4s;
+  }
+  
+  .slider:before {
+	position: absolute;
+	content: "";
+	height: 26px;
+	width: 26px;
+	left: 4px;
+	bottom: 4px;
+	background-color: white;
+	-webkit-transition: .4s;
+	transition: .4s;
+  }
+  
+  input:checked + .slider {
+	background-color: #2196F3;
+  }
+  
+  input:focus + .slider {
+	box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked + .slider:before {
+	-webkit-transform: translateX(26px);
+	-ms-transform: translateX(26px);
+	transform: translateX(26px);
+  }
+  
+
+/*   Teclado */
 #keyboard{
 	display: block;
 	height: 650px;
