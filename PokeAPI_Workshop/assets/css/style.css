@@ -40,7 +40,7 @@ body{
 }
 
 img {
-    width: 100%;
+    width: 35%;
 
 }
 
@@ -69,4 +69,8 @@ img {
     color: white;
   }
 
+  .datosPersonajes {
+    margin-top: 80px;
+    margin-bottom: 30px;
+}
 
