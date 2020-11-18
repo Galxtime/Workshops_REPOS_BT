@@ -6,7 +6,7 @@ function auth(req, res, next) {
     let jwtToken = req.header("Authorization");
     // realizamos un split al JWT agregar  un espacio despues del bearer
     
-          jwtToken= jwtToken.split("")[1];
+          jwtToken= jwtToken.split(" ")[1];
 
         // si el token no existe o no llego
         if(!jwtToken) return res.status(405).send("No hay token para un acceso");

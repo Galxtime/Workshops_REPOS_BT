@@ -46,7 +46,7 @@ router.post("/", auth, async(req, res) =>{
 
 //Crear actividad con actividad 
 router.post("/cargarArchivo",  cargarArchivo.single("imagen"),  auth,  async (req, res) => {
-  //obtengo valores url=protocolo http el host es la ruta y el puerto localhost:3000 si es hosting mi pagina.com
+  //obtengo valores url=protocolo http el host es la ruta y el puerto localhost:3000 si es hosting mi pagina.comf
     const url = req.protocol + "://" + req.get("host");
     // Validamos si existe el usuario
     const usuario = await Usuario.findById(req.usuario._id);
